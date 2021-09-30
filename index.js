@@ -13,11 +13,11 @@ var noop = function () {}
 var echo = function (name) {
   return name
 }
-// just a comment
+
 var normalize = !win32 ? echo : function (name) {
   return name.replace(/\\/g, '/').replace(/[:?<>|]/g, '_')
 }
-
+// just a comment
 var statAll = function (fs, stat, cwd, ignore, entries, sort) {
   var queue = entries || ['.']
 
