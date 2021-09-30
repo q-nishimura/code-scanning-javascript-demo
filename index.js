@@ -13,7 +13,7 @@ var noop = function () {}
 var echo = function (name) {
   return name
 }
-
+// just a comment
 var normalize = !win32 ? echo : function (name) {
   return name.replace(/\\/g, '/').replace(/[:?<>|]/g, '_')
 }
